@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        var person = {
+            fName : "sheetal",
+            lName : "imtiaz",
+            age : 24,
+            greeting1 : function(){
+                console.log("Hello World 1");
+            },
+
+            greeting2 : function(){
+                return "Hello World 2";
+            },
+
+
+            hobby : [12,13,15]
+        };
+
+        // console.log(person.fName)
+        // console.log(person["lName"])
+        // person.greeting1()
+        // console.log(person.greeting2())
+        // console.log(person)
+
+
+
+
+        var myObj = {
+            name : "john",
+            age : 29,
+            city : "Dhaka",
+            marks : [45,76,88]
+        }
+        // console.log(myObj)
+
+        // var keyName = Object.keys(myObj)
+        // console.log(keyName)
+        
+        // var valueName = Object.values(myObj)
+        // console.log(valueName)
+
+        // console.log(valueName[0])
+        // console.log(valueName[3])
+        // console.log(valueName[3][1])
+
+
+
+        // var testEntry = Object.entries(myObj)
+        // console.log(testEntry)//We got both keys and values
+       
+        // console.log(testEntry[3][0])
+        // console.log(testEntry[3][1][0])
+
+
+        var myObj1 = {
+            name : "john",
+            age : 29,
+            city : {
+                city1 : "Dhaka",
+                city2 : "Khulna",
+                city3 : "barishal"
+            },
+            marks : [45,76,88]
+        }
+        // var test = Object.entries(myObj1)
+        // console.log(test)
+        // console.log(test[2][0])
+        // console.log(test[2][1])
+        // console.log(test[2][1].city1)
+
+
+
+        var myObj1 = {
+            name : "john",
+            age : 29,
+            city : {
+                city1 : ["Dhaka0","Dhaka1","Dhaka2"],
+                city2 : {
+                    first : 21,
+                    second : 22,
+                    third :23,
+                    forth :24
+                },
+                city3 : "barishal"
+            },
+            marks : [45,76,88]
+        }
+
+        var test = Object.entries(myObj1)
+        console.log(test)
+       // console.log(test[2][1].city1[1])
+       console.log(test[2][1].city2.second)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
